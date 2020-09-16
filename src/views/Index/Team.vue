@@ -7,7 +7,7 @@
         <!-- <img src="../../../public/img/wakuang.jpg" alt /> -->
       </div>
       <!-- 收取 -->
-      <div v-if="false" class="shou">可收：190</div>
+      <div v-if="status==0" class="shou">可收：{{recover}}</div>
       <div v-else>挖矿中...</div>
     </div>
     <!-- 基础信息容器 -->
@@ -41,11 +41,13 @@ export default {
   name: "team",
   components: {
     ComputerList,
+    recover: "",
+    status: 1,
   },
   data() {
     return {
       status: 1,
-      computerList:[],
+      computerList: [],
     };
   },
   created() {
@@ -55,7 +57,8 @@ export default {
   methods: {
     async dealRecover() {
       let res = await recover();
-      console.log(res);
+      this.status = res.code;
+      this.recover = res.recover;
     },
     async dealmycomputer() {
       let r = await mycomputer();
