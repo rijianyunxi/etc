@@ -77,7 +77,7 @@ export default {
       invatation: "",
       msg: "获取验证码",
       disabled: false,
-      msgId: "45de215b-2512-40b2-9de4-f126b7731f84",
+      msgId: "",
     };
   },
   created() {

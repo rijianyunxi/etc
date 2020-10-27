@@ -20,3 +20,5 @@ export const mycomputer = ()=>axios.post('/mycomputer',{})
 export const bindzfpay = (zfpay)=>axios.post('/bindzfpay',{zfpay:zfpay})
 //recover
 export const recover = ()=>axios.post("/recover",{})
+//getTop
+export const getTop = (tag)=>axios.post("/top",{tag:tag})

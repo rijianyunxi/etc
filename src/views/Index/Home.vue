@@ -14,7 +14,7 @@
       </div>
       <div class="grade-contents">
         <li v-for="(r,i) in data" :key="i">
-          <div class="index">{{i+1}}.</div>
+          <div class="index">{{i+1}}</div>
           <div class="lilist">
             {{r.phone}}
             <span>{{r.number}}</span>
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import { getTop } from "../../api/index";
 import Message from "../../components/Message";
 export default {
   name: "home",
@@ -62,8 +63,10 @@ export default {
     };
   },
   methods: {
-    dealMove(i) {
+    async dealMove(i) {
       this.currentIndex = i;
+      let res = await getTop(i);
+      console.log(res);
     },
   },
 };
@@ -125,4 +128,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+/* .grade-contents .index:nth-child(1) {
+  color: antiquewhite;
+} */
 </style>

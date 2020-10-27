@@ -49,8 +49,8 @@ export default {
   },
   data() {
     return {
-      phone: "15713908053",
-      password: "123456",
+      phone: "",
+      password: "",
     };
   },
   methods: {
