@@ -8,9 +8,9 @@ Vue写的一个项目。正在写，没有上线。
 
 ![1](https://github.com/rijianyunxi/etc/blob/master/yanshi/11.png?raw=true)
 ![2](https://github.com/rijianyunxi/etc/blob/master/yanshi/12.png?raw=true)
-![1](http://static.runoob.com/images/runoob-logo.png)
-![1](http://static.runoob.com/images/runoob-logo.png)
-![1](http://static.runoob.com/images/runoob-logo.png)
+![2](https://github.com/rijianyunxi/etc/blob/master/yanshi/13.png?raw=true)
+![2](https://github.com/rijianyunxi/etc/blob/master/yanshi/14.png?raw=true)
+![2](https://github.com/rijianyunxi/etc/blob/master/yanshi/15.png?raw=true)
 
 ### 启动
 
